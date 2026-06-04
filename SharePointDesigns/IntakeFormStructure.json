@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/form-layout.schema.json",
+  "header": {
+    "elmType": "div",
+    "style": {
+      "display": "flex",
+      "box-sizing": "border-box",
+      "align-items": "center",
+      "width": "100%",
+      "background-color": "#002060",
+      "padding": "16px",
+      "border-bottom": "3px solid #595959"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "color": "#ffffff",
+          "font-size": "18px",
+          "font-weight": "bold",
+          "text-align": "center",
+          "width": "100%",
+          "letter-spacing": "0.5px"
+        },
+        "txtContent": "FINANCE CENTRAL – INTAKE REGISTRY"
+      }
+    ]
+  },
+  "body": {
+    "sections": [
+      {
+        "displayname": "General Information",
+        "fields": [
+          "Title",
+          "Requestor",
+          "Branch/Department"
+        ]
+      },
+      {
+        "displayname": "Financial Parameters",
+        "fields": [
+          "Amount Allocation",
+          "Budget Category",
+          "Justification"
+        ]
+      }
+    ]
+  }
+}

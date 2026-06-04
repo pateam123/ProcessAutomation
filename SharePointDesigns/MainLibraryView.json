@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/row-formatting.schema.json",
+  "hideSelection": true,
+  "hideColumnHeader": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "style": {
+      "display": "flex",
+      "align-items": "center",
+      "margin": "0 auto 12px auto",
+      "padding": "16px",
+      "background-color": "#ffffff",
+      "border-radius": "8px",
+      "box-shadow": "0 2px 8px 0 rgba(0,0,0,0.06)",
+      "border-left": "5px solid #002060",
+      "max-width": "1100px",
+      "width": "100%",
+      "box-sizing": "border-box"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "display": "flex",
+          "flex-direction": "column",
+          "flex-grow": "1"
+        },
+        "children": [
+          {
+            "elmType": "a",
+            "attributes": {
+              "href": "[$FileRef]",
+              "target": "_blank"
+            },
+            "style": {
+              "font-size": "16px",
+              "font-weight": "bold",
+              "color": "#002060",
+              "text-decoration": "none",
+              "margin-bottom": "4px"
+            },
+            "txtContent": "[$FileLeafRef]"
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "font-size": "11px",
+              "color": "#595959"
+            },
+            "txtContent": "='Modified: ' + [$Modified]"
+          }
+        ]
+      }
+    ]
+  }
+}
